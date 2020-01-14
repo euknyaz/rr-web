@@ -6,6 +6,7 @@
   "scripts": {
     "build-client": "browserify www/js/app.js -t babelify -o www/js/bundle.js",
     "start": "node server.js",
+    "docker-start": "npm install && npm run webpack && node server.js",
     "webpack": "webpack"
   },
   "repository": {
